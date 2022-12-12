@@ -1,0 +1,20 @@
+{
+  "name": "multiplatform-lib",
+  "version": "1.0.6",
+  "private": true,
+  "workspaces": [
+    "packages/multiplatform-lib-js-legacy",
+    "packages/multiplatform-lib-js-legacy-test",
+    "packages/multiplatform-lib-js-ir",
+    "packages/multiplatform-lib-js-ir-test",
+    "packages_imported/kotlin-test-js-runner/1.7.21",
+    "packages_imported/kotlin/1.7.21",
+    "packages_imported/kotlin-test/1.7.21"
+  ],
+  "resolutions": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

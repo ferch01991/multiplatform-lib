@@ -1,0 +1,107 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../multiplatform-lib/1.0.6/multiplatform-lib-1.0.6.module",
+    "group": "com.rappi",
+    "module": "multiplatform-lib",
+    "version": "1.0.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "nativeApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.http4k",
+          "module": "http4k-core",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-client-apache",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-lib.klib",
+          "url": "multiplatform-lib-native-1.0.6.klib",
+          "size": 11584,
+          "sha512": "f51d1c1bbab6ca893c71a12f5910599d58f87368625f2fd5571dcce6762a9d8732d4e8ab3dafc8af30e881ba68674f4dfd941066f95b8c244d60e52da7f5947d",
+          "sha256": "6a638cd5700d339c84bae770b6383e2186925dc5529a9d9184ff75515e34c056",
+          "sha1": "184dd2a04b3e6fa2a5fddf921bb81909b020093f",
+          "md5": "4af44dcc85b599fdb860eccf9ade66bb"
+        }
+      ]
+    },
+    {
+      "name": "nativeMetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.http4k",
+          "module": "http4k-core",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-client-apache",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-lib-native-1.0.6-metadata.jar",
+          "url": "multiplatform-lib-native-1.0.6-metadata.jar",
+          "size": 261,
+          "sha512": "2942a82dd1ef79a5a5ad59fb1ab190917e01f06186d14a48c50e75d7e49089c1e3c4a7dbd4bc8b443765c07ceaeb7dccf3240b6ceae9bb4d4b4ee60417ddc7a0",
+          "sha256": "849238d5f8c88c09105fb5071178c00b2115c6c14bf6c73ea690dabf1cbc836d",
+          "sha1": "1ebafbcf9c0380ced383036eabb087b9539729d5",
+          "md5": "98d027edbb0c58c5e8d0f9ad1aa62ad3"
+        }
+      ]
+    }
+  ]
+}

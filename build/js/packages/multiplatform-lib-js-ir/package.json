@@ -1,0 +1,10 @@
+{
+  "name": "multiplatform-lib-js-ir",
+  "version": "1.0.5",
+  "main": "kotlin/multiplatform-lib-js-ir.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

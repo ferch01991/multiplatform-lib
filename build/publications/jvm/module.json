@@ -1,0 +1,98 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../multiplatform-lib/1.0.6/multiplatform-lib-1.0.6.module",
+    "group": "com.rappi",
+    "module": "multiplatform-lib",
+    "version": "1.0.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.http4k",
+          "module": "http4k-core",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-client-apache",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-lib-jvm-1.0.6.jar",
+          "url": "multiplatform-lib-jvm-1.0.6.jar",
+          "size": 7963,
+          "sha512": "67af41c50f87eaf41662da276e1546a3160248adbf8f35ac511b2bda2cce3d83467e946e154ffcf5d5d022ae928880eca9209575f1601f04ab02aef06f34c56e",
+          "sha256": "b62c9bd5b54a7df056cc19bec3e72a66a7934036a27b9f61bfb788ace8ee5ba4",
+          "sha1": "226dd9cfbf2af46b97b08eea0ac023d8a255a2a4",
+          "md5": "b850e2993c8733e30699fdf3d07b525b"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.http4k",
+          "module": "http4k-core",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-client-apache",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-lib-jvm-1.0.6.jar",
+          "url": "multiplatform-lib-jvm-1.0.6.jar",
+          "size": 7963,
+          "sha512": "67af41c50f87eaf41662da276e1546a3160248adbf8f35ac511b2bda2cce3d83467e946e154ffcf5d5d022ae928880eca9209575f1601f04ab02aef06f34c56e",
+          "sha256": "b62c9bd5b54a7df056cc19bec3e72a66a7934036a27b9f61bfb788ace8ee5ba4",
+          "sha1": "226dd9cfbf2af46b97b08eea0ac023d8a255a2a4",
+          "md5": "b850e2993c8733e30699fdf3d07b525b"
+        }
+      ]
+    }
+  ]
+}

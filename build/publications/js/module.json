@@ -1,0 +1,212 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../multiplatform-lib/1.0.6/multiplatform-lib-1.0.6.module",
+    "group": "com.rappi",
+    "module": "multiplatform-lib",
+    "version": "1.0.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsLegacyApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.7.21"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-core",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-client-apache",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-lib-jslegacy-1.0.6.jar",
+          "url": "multiplatform-lib-js-1.0.6.jar",
+          "size": 44824,
+          "sha512": "2a1fa93bf9a76dd5c1f2ed1b7ec0b12974c0e77f7aeea41a4d7cb617003ea9a6513366f6d9302012c01eb995247b65e56624c3f2975093d98119c7a9230ed5dd",
+          "sha256": "15f181d6b12a7a659404991631ecaf5e35dc5badf06c853f95d21c496d4ca758",
+          "sha1": "52698ba4b0c94a09d13f7367030601a342a384e3",
+          "md5": "c3a7a3a2530326848f478a5a4ae42133"
+        }
+      ]
+    },
+    {
+      "name": "jsLegacyRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.7.21"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-core",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-client-apache",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-lib-jslegacy-1.0.6.jar",
+          "url": "multiplatform-lib-js-1.0.6.jar",
+          "size": 44824,
+          "sha512": "2a1fa93bf9a76dd5c1f2ed1b7ec0b12974c0e77f7aeea41a4d7cb617003ea9a6513366f6d9302012c01eb995247b65e56624c3f2975093d98119c7a9230ed5dd",
+          "sha256": "15f181d6b12a7a659404991631ecaf5e35dc5badf06c853f95d21c496d4ca758",
+          "sha1": "52698ba4b0c94a09d13f7367030601a342a384e3",
+          "md5": "c3a7a3a2530326848f478a5a4ae42133"
+        }
+      ]
+    },
+    {
+      "name": "jsIrApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.7.21"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-core",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-client-apache",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-lib-jsir-1.0.6.klib",
+          "url": "multiplatform-lib-js-1.0.6.klib",
+          "size": 5983,
+          "sha512": "79fe6e18ee5b8bbf21dca3ce65b87e9f3ff42a8abcb4c2670dfdd7070a205c323ccdd21c7c5d32b540dfcae8671e44672096f6fe1cc89ee457e2b0b31a778606",
+          "sha256": "6214c8f0130ad11f5d1f938d7072224f2ef0bf7d0865946492533f178f48940b",
+          "sha1": "c666b56831962ab0afe12ffb90a3dbca176bdb97",
+          "md5": "11b39652e9b5e4a2763797b0d6a52870"
+        }
+      ]
+    },
+    {
+      "name": "jsIrRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.7.21"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-core",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.http4k",
+          "module": "http4k-client-apache",
+          "version": {
+            "requires": "4.34.3.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-lib-jsir-1.0.6.klib",
+          "url": "multiplatform-lib-js-1.0.6.klib",
+          "size": 5983,
+          "sha512": "79fe6e18ee5b8bbf21dca3ce65b87e9f3ff42a8abcb4c2670dfdd7070a205c323ccdd21c7c5d32b540dfcae8671e44672096f6fe1cc89ee457e2b0b31a778606",
+          "sha256": "6214c8f0130ad11f5d1f938d7072224f2ef0bf7d0865946492533f178f48940b",
+          "sha1": "c666b56831962ab0afe12ffb90a3dbca176bdb97",
+          "md5": "11b39652e9b5e4a2763797b0d6a52870"
+        }
+      ]
+    }
+  ]
+}

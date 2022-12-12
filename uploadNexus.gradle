@@ -1,0 +1,46 @@
+apply plugin: 'maven-publish'
+
+// Because the components are created only during the afterEvaluate phase, you must
+// configure your publications using the afterEvaluate() lifecycle method.
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // You can then customize attributes of the publication as shown below.
+                groupId = LIBRARY_GROUP
+                artifactId = LIBRARY_ARTIFACT_ID
+                version = LIBRARY_VERSION_NAME
+
+                pom {
+                    licenses {
+                        license {
+                            name = LIBRARY_LICENCE_NAME
+                            url = LIBRARY_LICENCE_URL
+                        }
+                    }
+
+                    scm {
+                        url = LIBRARY_SCM_URL
+                        connection = LIBRARY_SCM_CONNECTION
+                        developerConnection  = LIBRARY_SCM_DEV_CONNECTION
+                    }
+                }
+            }
+        }
+
+        repositories {
+            maven {
+                url = NEXUS_URL_REPOSITORY_DEV
+                allowInsecureProtocol = true
+                credentials {
+                    username "$System.env.NEXUS_USERNAME_DEV"
+                    password "$System.env.NEXUS_PASSWORD_DEV"
+                }
+            }
+        }
+    }
+}
