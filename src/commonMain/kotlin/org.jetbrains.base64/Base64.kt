@@ -1,5 +1,12 @@
 package org.jetbrains.base64
 
+import io.ktor.client.*
+import io.ktor.client.call.*
+import io.ktor.client.plugins.*
+import io.ktor.client.request.*
+import io.ktor.serialization.kotlinx.json.*
+import kotlinx.serialization.json.Json
+
 public interface Base64Encoder {
     public fun encode(src: ByteArray): ByteArray
 
@@ -11,14 +18,14 @@ public interface Base64Encoder {
     }
 }
 
-public interface SendMetrics{
-    public fun send_metrics_sfx(name:String, value: Int): String
+interface SendMetrics{
+    suspend fun sendMetricsSfx(name:String, value: Int): String
 }
 
-public expect object SendMetricsFactory{
-    public fun createResponse(): SendMetrics
+expect object SendMetricsFactory{
+    fun createResponse(): SendMetrics
 }
 
-public expect object Base64Factory {
-    public fun createEncoder(): Base64Encoder
+expect object Base64Factory {
+    fun createEncoder(): Base64Encoder
 }

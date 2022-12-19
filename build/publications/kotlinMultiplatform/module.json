@@ -1,9 +1,9 @@
 {
   "formatVersion": "1.1",
   "component": {
-    "group": "com.rappi",
+    "group": "com.rappi.rs-sfx",
     "module": "multiplatform-lib",
-    "version": "1.0.6",
+    "version": "1.0.26",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -23,91 +23,45 @@
       },
       "dependencies": [
         {
-          "group": "org.http4k",
-          "module": "http4k-core",
+          "group": "io.ktor",
+          "module": "ktor-client-core-jvm",
           "version": {
-            "requires": "4.34.3.1"
+            "requires": "2.2.1"
           }
         },
         {
-          "group": "org.http4k",
-          "module": "http4k-client-apache",
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
           "version": {
-            "requires": "4.34.3.1"
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-cio",
+          "version": {
+            "requires": "2.2.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
           }
         }
       ],
       "files": [
         {
-          "name": "multiplatform-lib-metadata-1.0.6.jar",
-          "url": "multiplatform-lib-1.0.6.jar",
-          "size": 3472,
-          "sha512": "0d8b0f7e5ddcdcd02f45dbbb765a52c585443301c838f229fdf47d48a551fffe1310f1c39c41a2dc7912d8d4de5eec545648a85e7fb487a6454fe72cf9383353",
-          "sha256": "2c85e50b035fc6a94fc37f3f55e4ebd66c5e30b435f5b1e0bfbcf115f1b4d242",
-          "sha1": "415611f35769632de95bbdf1b9bb8dcd8ea4acf7",
-          "md5": "02d22aafd211fbf39568522332863cce"
+          "name": "multiplatform-lib-metadata-1.0.26.jar",
+          "url": "multiplatform-lib-1.0.26.jar",
+          "size": 715,
+          "sha512": "b1a84ae4a80a8d545dd6c8d301583427ead4025113fdafc18e96c5cb88ebcef02baf9a184b630075fbf65ce25c2ae99893c7ccb75987e982d469294762797c32",
+          "sha256": "efcf527c33af7b4804f30819334b3a4a5e8905eadbc7f93c64be130a7c420de3",
+          "sha1": "5e1e4692bbf97b5f99ba2bea076d2eccad79823c",
+          "md5": "b01783d986300fe8e5a5be15976552aa"
         }
       ]
-    },
-    {
-      "name": "jsLegacyApiElements-published",
-      "attributes": {
-        "org.gradle.category": "library",
-        "org.gradle.usage": "kotlin-api",
-        "org.jetbrains.kotlin.js.compiler": "legacy",
-        "org.jetbrains.kotlin.platform.type": "js"
-      },
-      "available-at": {
-        "url": "../../multiplatform-lib-js/1.0.6/multiplatform-lib-js-1.0.6.module",
-        "group": "com.rappi",
-        "module": "multiplatform-lib-js",
-        "version": "1.0.6"
-      }
-    },
-    {
-      "name": "jsLegacyRuntimeElements-published",
-      "attributes": {
-        "org.gradle.category": "library",
-        "org.gradle.usage": "kotlin-runtime",
-        "org.jetbrains.kotlin.js.compiler": "legacy",
-        "org.jetbrains.kotlin.platform.type": "js"
-      },
-      "available-at": {
-        "url": "../../multiplatform-lib-js/1.0.6/multiplatform-lib-js-1.0.6.module",
-        "group": "com.rappi",
-        "module": "multiplatform-lib-js",
-        "version": "1.0.6"
-      }
-    },
-    {
-      "name": "jsIrApiElements-published",
-      "attributes": {
-        "org.gradle.category": "library",
-        "org.gradle.usage": "kotlin-api",
-        "org.jetbrains.kotlin.js.compiler": "ir",
-        "org.jetbrains.kotlin.platform.type": "js"
-      },
-      "available-at": {
-        "url": "../../multiplatform-lib-js/1.0.6/multiplatform-lib-js-1.0.6.module",
-        "group": "com.rappi",
-        "module": "multiplatform-lib-js",
-        "version": "1.0.6"
-      }
-    },
-    {
-      "name": "jsIrRuntimeElements-published",
-      "attributes": {
-        "org.gradle.category": "library",
-        "org.gradle.usage": "kotlin-runtime",
-        "org.jetbrains.kotlin.js.compiler": "ir",
-        "org.jetbrains.kotlin.platform.type": "js"
-      },
-      "available-at": {
-        "url": "../../multiplatform-lib-js/1.0.6/multiplatform-lib-js-1.0.6.module",
-        "group": "com.rappi",
-        "module": "multiplatform-lib-js",
-        "version": "1.0.6"
-      }
     },
     {
       "name": "jvmApiElements-published",
@@ -118,10 +72,10 @@
         "org.jetbrains.kotlin.platform.type": "jvm"
       },
       "available-at": {
-        "url": "../../multiplatform-lib-jvm/1.0.6/multiplatform-lib-jvm-1.0.6.module",
-        "group": "com.rappi",
+        "url": "../../multiplatform-lib-jvm/1.0.26/multiplatform-lib-jvm-1.0.26.module",
+        "group": "com.rappi.rs-sfx",
         "module": "multiplatform-lib-jvm",
-        "version": "1.0.6"
+        "version": "1.0.26"
       }
     },
     {
@@ -133,42 +87,10 @@
         "org.jetbrains.kotlin.platform.type": "jvm"
       },
       "available-at": {
-        "url": "../../multiplatform-lib-jvm/1.0.6/multiplatform-lib-jvm-1.0.6.module",
-        "group": "com.rappi",
+        "url": "../../multiplatform-lib-jvm/1.0.26/multiplatform-lib-jvm-1.0.26.module",
+        "group": "com.rappi.rs-sfx",
         "module": "multiplatform-lib-jvm",
-        "version": "1.0.6"
-      }
-    },
-    {
-      "name": "nativeApiElements-published",
-      "attributes": {
-        "artifactType": "org.jetbrains.kotlin.klib",
-        "org.gradle.category": "library",
-        "org.gradle.usage": "kotlin-api",
-        "org.jetbrains.kotlin.native.target": "macos_x64",
-        "org.jetbrains.kotlin.platform.type": "native"
-      },
-      "available-at": {
-        "url": "../../multiplatform-lib-native/1.0.6/multiplatform-lib-native-1.0.6.module",
-        "group": "com.rappi",
-        "module": "multiplatform-lib-native",
-        "version": "1.0.6"
-      }
-    },
-    {
-      "name": "nativeMetadataElements-published",
-      "attributes": {
-        "artifactType": "org.jetbrains.kotlin.klib",
-        "org.gradle.category": "library",
-        "org.gradle.usage": "kotlin-metadata",
-        "org.jetbrains.kotlin.native.target": "macos_x64",
-        "org.jetbrains.kotlin.platform.type": "native"
-      },
-      "available-at": {
-        "url": "../../multiplatform-lib-native/1.0.6/multiplatform-lib-native-1.0.6.module",
-        "group": "com.rappi",
-        "module": "multiplatform-lib-native",
-        "version": "1.0.6"
+        "version": "1.0.26"
       }
     }
   ]

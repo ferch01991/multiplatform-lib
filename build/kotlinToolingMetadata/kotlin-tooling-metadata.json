@@ -11,16 +11,6 @@
   },
   "projectTargets": [
     {
-      "target": "org.jetbrains.kotlin.gradle.targets.js.KotlinJsTarget",
-      "platformType": "js",
-      "extras": {
-        "js": {
-          "isBrowserConfigured": true,
-          "isNodejsConfigured": false
-        }
-      }
-    },
-    {
       "target": "org.jetbrains.kotlin.gradle.targets.jvm.KotlinJvmTarget",
       "platformType": "jvm",
       "extras": {
@@ -32,17 +22,6 @@
     {
       "target": "org.jetbrains.kotlin.gradle.plugin.mpp.KotlinMetadataTarget",
       "platformType": "common"
-    },
-    {
-      "target": "org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTargetWithHostTests",
-      "platformType": "native",
-      "extras": {
-        "native": {
-          "konanTarget": "macos_x64",
-          "konanVersion": "1.7.21",
-          "konanAbiVersion": "1.7.0"
-        }
-      }
     }
   ]
 }

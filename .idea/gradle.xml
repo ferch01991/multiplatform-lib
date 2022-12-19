@@ -9,7 +9,24 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lib" />
+            <option value="$PROJECT_DIR$/build" />
+            <option value="$PROJECT_DIR$/ktor-bom" />
+            <option value="$PROJECT_DIR$/ktor-client" />
+            <option value="$PROJECT_DIR$/ktor-client/ktor-client-android" />
+            <option value="$PROJECT_DIR$/ktor-client/ktor-client-apache" />
+            <option value="$PROJECT_DIR$/ktor-client/ktor-client-cio" />
+            <option value="$PROJECT_DIR$/ktor-client/ktor-client-core" />
+            <option value="$PROJECT_DIR$/ktor-client/ktor-client-tests" />
+            <option value="$PROJECT_DIR$/ktor-http" />
+            <option value="$PROJECT_DIR$/ktor-http/ktor-http-cio" />
+            <option value="$PROJECT_DIR$/ktor-io" />
+            <option value="$PROJECT_DIR$/ktor-shared" />
+            <option value="$PROJECT_DIR$/ktor-shared/ktor-resources" />
+            <option value="$PROJECT_DIR$/ktor-shared/ktor-serialization" />
+            <option value="$PROJECT_DIR$/ktor-test-dispatcher" />
+            <option value="$PROJECT_DIR$/ktor-utils" />
+            <option value="$PROJECT_DIR$/src" />
+            <option value="$PROJECT_DIR$/src/jvmMain" />
           </set>
         </option>
       </GradleProjectSettings>

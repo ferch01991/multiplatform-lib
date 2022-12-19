@@ -1,8 +1,0 @@
-builtins_platform=JS
-unique_name=com.rappi\:multiplatform-lib_test
-compiler_version=1.7.21
-depends=com.rappi\:multiplatform-lib kotlin-test kotlin
-jsOutputName=multiplatform-lib-js-ir-test
-abi_version=1.7.0
-metadata_version=1.4.1
-ir_version=1.0.0
